@@ -15,17 +15,18 @@ namespace MonopolyGame
         public static double PlayedRounds { get; private set; }
         public static double PlayedGames { get; private set; }
         private static List<Player> PlayersTurn = new List<Player>();
-        private static List<Color> ReminderColors = new List<Color>()
-        {
-            Color.Red,
-            Color.Blue,
-            Color.Green,
-            Color.Yellow,
-            Color.Purple,
-            Color.Pink,
+        private static List<Color> ReminderColors = new List<Color>();
+        // public Dictionary<int,Places> Places { get; set; }
+        // {
+        //     Color.Red,
+        //     Color.Blue,
+        //     Color.Green,
+        //     Color.Yellow,
+        //     Color.Purple,
+        //     Color.Pink,
 
 
-        };
+        // };
         private static List<Player> Players = new List<Player>();
 
         public static void MainMenu()
@@ -219,10 +220,10 @@ namespace MonopolyGame
 
 
         }
-        public static void Go(Player player)
-        {
-            player.Place = (Places)((int)player.Place + player.Dice);
-        }
+        // public static void Go(Player player)
+        // {
+        //     player.Place = (Places)((int)player.Place + player.Dice);
+        // }
 
         public static void Play(List<Player> players)
         {
@@ -234,19 +235,18 @@ namespace MonopolyGame
                 {
                     Console.WriteLine(item.Name + " turn");
                     item.RollADice();
-                    Go(item);
+                    // Go(item);
 
                 }
             }
         }
-        public static void ProcessPlace(Player player)
-        {
-            // switch (player.Place)
-            // {
-            //     case
-            //     default:
-            // }
-        }
+        // public static void ProcessPlace(Player player)
+        // {
+        //     if (player.Place is )
+        //     {
+                
+        //     }
+        // }
 
         public static Player StartFirst(List<Player> players)
         {

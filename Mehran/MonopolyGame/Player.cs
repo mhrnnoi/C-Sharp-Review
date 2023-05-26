@@ -16,7 +16,7 @@ namespace MonopolyGame
             Properties = new List<Property>();
             ChestCard = new List<ChestCard>();
             ChanceCard = new List<ChanceCard>();
-            Place = (Places)1;
+            Place = (PlacesEnum)1;
 
 
         }
@@ -29,7 +29,7 @@ namespace MonopolyGame
         public List<ChestCard> ChestCard { get; set; }
         public List<ChanceCard> ChanceCard { get; set; }
         public int Dice { get; private set; }
-        public Places Place { get; set; }
+        public PlacesEnum Place { get; set; }
 
         public void RollADice()
         {
