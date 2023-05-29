@@ -10,9 +10,9 @@ namespace MonopolyGame
     {
         static void Main(string[] args)
         {
-
+            
             Monopoly.Start();
-
+            
 
 
 
